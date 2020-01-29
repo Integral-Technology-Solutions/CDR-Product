@@ -11,7 +11,8 @@ body {
 }
 
 body, .ui-dialog, input, .filepond--root {  
-	font-family: Arial,Helvetica,Verdana,sans-serif !important;
+	font-family: 'BloggerSansLight','BloggerSansLight','BloggerSansLight' !important;
+	font-size: 100%;
 }
 
 img {
@@ -132,8 +133,13 @@ A.sign-out  {
 	font-size: 12px;
 }
 
+#module_header {
+	background: linear-gradient(75deg, #f4da69, rgba(0,0,0,0) 80%),
+				linear-gradient(75deg, #cd1442, #f4da69, 85%);
+}
+
 #module_header i, .bookmark-decoration {
-	color: #f4da69;
+	color: #cd1442;
 }
 
 #modules_list {
@@ -147,7 +153,7 @@ A.sign-out  {
 }
 
 .mobile #modules_list {
-	background: white;
+	background: #F5F5F5;
 }
 
 #modules_list_core {
@@ -185,6 +191,11 @@ A.sign-out  {
 
 .module-row, .folder-row {  	
 	padding: 10px;
+	background: linear-gradient(135deg, #e5e5e5 0%,#b7b7b7 98%,#ffffff 100%);
+	border-radius: 15px;
+	border-color: black;
+	margin: 5px;
+	text-align: center;
 }
 
 i.folder-icon { 
@@ -260,7 +271,7 @@ i.folder-icon {
 }
 
 #modules_list .selected {
-	background: #3777D7;		
+	background: #fdc025;		
 }
 
 #more_modules {
@@ -279,7 +290,33 @@ a #loading_more_modules  {
 }
 
 A:hover .module-row, A:hover .folder-row, A:hover #organizations_index { 
-	background: #DFF4FF;
+	background: linear-gradient(135deg, #e5e5e5 0%,#fdc025 98%,#ffffff 100%);
+	background-size: 400% 400%;
+	-webkit-animation: hover-anim 1.2s ease; 
+	animation: hover-anim 1.2s ease; 
+}
+
+@keyframes hover-anim {
+
+	0% {
+		background-position: 0% 10%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+@-webkit-keyframes hover-anim {
+
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .module-name, .folder-row, #organizations_index { 
@@ -292,7 +329,7 @@ A:hover .module-row, A:hover .folder-row, A:hover #organizations_index {
 }
 
 .selected .module-name, #organizations_index.selected, #organizations_index.selected i { 
-	color: white;
+	color: black;
 }
 
 .privacy-policy {
@@ -390,6 +427,19 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus
 
 .module-wrapper {
 	width: 100%; 
+	margin-bottom: 40px;
+}
+
+.module-wrapper a {
+	color: #cd1442;
+}
+
+#module_header {
+	background-color: #ffcf56;
+}
+
+#modules_list_content {
+	background-color: white;
 }
 
  #module_header { 
@@ -419,9 +469,11 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus
 	background: #F5F5F5;
 	margin-left: -1px;
 	margin-right: -1px;
-	min-height: 15px;
+	padding: 7px;
+	min-height: 20px;
 	border-top: 1px solid #CCCCCC;
 	border-bottom: 1px solid #CCCCCC;
+
 }
 
 .ox-active-section .ox-collection-list-actions {
@@ -449,19 +501,23 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus
 .ox-button-bar .ox-button-bar-button a,  
 .ox-collection-list-actions .ox-button-bar-button a {
 	border: 1px solid transparent; 
-	padding: 6px 6px 6px 0px;  
+	padding: 6px 6px 10px 0px;  
 	font-weight: bold;
 	text-decoration: none;
 }
 
-.ox-button-bar .ox-button-bar-button a,  
+.ox-button-bar .ox-button-bar-button i,  
 .ox-collection-list-actions .ox-button-bar-button a, i, .ox-icon i.mdi-close-circle,
-.module-name, .folder-row, #organizations_index,
+.folder-row, #organizations_index,
 .ox-customize-controls .mdi-filter, .ox-customize-controls .mdi-filter-remove, 
 .ox-customize-controls .mdi-sort-numeric, .ox-customize-controls .mdi-sort-alphabetical, 
-.ox-list-header a 
+.ox-list-header i 
  {   
-	color: #6F6F6F;
+	color: #cd1442;
+}
+
+.module-name, .ox-list-header a, .ox-button-bar-button a {
+	color: black;
 }
 
 .ox-button-bar .ox-button-bar-button a:hover, 

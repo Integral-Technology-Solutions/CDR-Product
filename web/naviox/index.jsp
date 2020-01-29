@@ -42,6 +42,7 @@ manager.setModuleName(module); // In order to show the correct description in he
 	<script type='text/javascript' src='<%=request.getContextPath()%>/xava/js/dwr-engine.js?ox=<%=oxVersion%>'></script>
 	<script type='text/javascript' src='<%=request.getContextPath()%>/dwr/interface/Modules.js?ox=<%=oxVersion%>'></script>
 	<script type='text/javascript' src='<%=request.getContextPath()%>/dwr/interface/Folders.js?ox=<%=oxVersion%>'></script>
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/blogger-sans-light-otf" type="text/css"/> 
 </head>
 
 <body <%=XavaStyle.getBodyClass(request)%>>

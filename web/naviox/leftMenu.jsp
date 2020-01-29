@@ -11,7 +11,8 @@
 		<div id="application_title">
 		
 			<div id="application_name">
-				<%=modules.getApplicationLabel(request)%>
+				<img width="150px" src="<%=request.getContextPath()%>/xava/images/logo.png">
+				<%-- <%=modules.getApplicationLabel(request)%> --%>
 			</div>
 		
 			<div id="organization_name">
